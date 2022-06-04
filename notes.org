@@ -1,0 +1,7 @@
+* Notes
+
+- [ ] need to write tests for the pages
+- [ ] made the routing work for the home and shop
+  - [ ] might have to refactor to make it more clear
+  - I still don't have an idea of what the page should look
+    - thinking of making

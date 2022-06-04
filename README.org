@@ -1,6 +1,6 @@
 * Project: Shopping Cart
 
-** Steps
+* Steps
 
 1. create-react-app -> remove boilerplate
 2. think about the component and the folder structure
