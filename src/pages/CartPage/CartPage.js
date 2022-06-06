@@ -1,21 +1,14 @@
+import React, { useState } from "react";
+import Cart from "../../components/Cart/Cart";
 const CartPage = () => {
+  const [items, setItems] = useState({});
+  const handleChange = () => {
+    console.log("change made");
+  };
   return (
     <div>
       <h1>Hello from CartPage</h1>
-      <div>
-        <div>
-          In cart
-          <div>
-            <div>item 1</div>
-            <div>price</div>
-          </div>
-          <div>
-            <div>item 1</div>
-            <div>price</div>
-          </div>
-        </div>
-        <div>Total Price</div>
-      </div>
+      <Cart />
     </div>
   );
 };

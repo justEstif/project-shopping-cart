@@ -1,95 +1,37 @@
-* Notes
-- [ ] need to write tests for the pages
-- [ ] made the routing work for the home and shop
-  - [ ] might have to refactor to make it more clear
-  - I still don't have an idea of what the page should look
-    - thinking of making
-- [ ] I might need to add a footer component
-- [ ] how do we keep track of the page current active?
+* TODO
+** [0/1] write more tests
+- [ ] I need to figure out how to test react better
+** [0/1] appearance
+- [ ] footer component?
+- [0/2] keep track of the current active page ~useParams~
+  - [ ] to update the icons
+  - [ ] conditional rendering
+** [0/1] add a way to adjust the quantity of the item
+- [ ] before adding to cart
+- [0/1] while in cart
+  - [ ] if the users sets it to 0 remove it?
+** [0/1] report the current items in the cart
+- [0/2] the items in cart and the number of items in the cart should be in state
+  - [ ] count is shared with the navigation bar
+  - [ ] items is shared between App and Cart
+- [ ] I need to understand use effect
+** [0/2] add a next button in checkout
+- [ ] handle if there is nothing in the cart
+- [ ] create cart after button is clicked
+
 * What to do
+- Make a way to adjust the number of items to add to the cart
+
 - I need to import to create some object that keeps track of the items in the shop, with all the proper details
   - I could create an Items component which has the items object and an item component which create the boxes for individual items
 - the Item component needs to show the item and include another component for adjusting the number of items
   - we can make this something that is controlled in the cart
+- i need to pass the item with the price and quantity
+    - if the item exists in the array, increase the quantity
 
 * Pages
-** ideas
-- the project would be for buying ethiopian products
-- it will be similar to the [[https://ethiopianspices.com/][ethiopian spices page]]
-** mind-map
-#+begin_src plantuml :file ./other/pagesMindMap.png
-@startmindmap
-+ pages
-,**:shop page
-Title + Body + Footer
-Body: needs Item component
-Item component has a name, picture, price and control of number of items
-I need to import the items object here;
-,**:cart page
-Title + Body + Footer
-needs some type of Cart component;
-@endmindmap
-#+end_src
-
-#+RESULTS:
-[[file:./other/pagesMindMap.png]]
 ** Cart Page
-*** Components
--
 ** Shop Page
-*** Components
-**** Item
-- [[./other/prototypeItemComponent.png]]
-- Item Information
-  #+begin_src plantuml
-@startuml
-object item
-item : name
-item : price
-item : img
-@enduml
-  #+end_src
-
-  #+RESULTS:
-  [[file:/tmp/babel-6lHFFy/plantuml-hKGWMi.png]]
-- Item Buy Component
-  #+begin_src plantuml
-@startuml
-object PurchaseComponent {
-        quantity
-        price
-}
-@enduml
-  #+end_src
-
-  #+RESULTS:
-  [[file:/tmp/babel-6lHFFy/plantuml-bQNZUB.png]]
-
-
 
 * Components
 ** ideas
-** mind-map
-#+begin_src plantuml :file ./other/componentsMindMap.png
-@startmindmap
-+ components
-++ Header
-+++ NavBar
-,***:Cart
-a button with some number test;
-
-,**:Title
-takes in the page as prop
-does some conditional rendering;
-
-,**:Body
-probably depends on the current page;
-
-,**:Footer
-Link to my GitHub and TOP;
-
-@endmindmap
-#+end_src
-
-#+RESULTS:
-[[file:./other/componentsMindMap.png]]

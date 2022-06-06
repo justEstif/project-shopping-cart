@@ -1,11 +1,10 @@
 import Items from "../../components/Items/Items";
-const ShopPage = () => {
+import "./ShopPage.css"
+const ShopPage = (props) => {
+  const { handleClick } = props
   return (
-    <div>
-      <h1>Hello from ShopPage</h1>
-      <div>
-        <Items />
-      </div>
+    <div className="shop-page">
+      <Items handleClick={handleClick} />
     </div>
   );
 };

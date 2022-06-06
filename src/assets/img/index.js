@@ -5,11 +5,6 @@ import samsungGalaxy22 from "./samsungGalaxy22.png"
 import sonyXm5 from "./sonyXm5.png"
 import xpsDesktop from "./xpsDesktop.png"
 
-import cartIcon from "./cartIcon.svg";
-
-const icons = {
-  cartIcon,
-};
 
 const items = {
   booxAir2Plus,
@@ -20,4 +15,4 @@ const items = {
   xpsDesktop
 };
 
-export { icons, items };
+export { items };

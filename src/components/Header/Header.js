@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom";
-import CartTab from "../CartTab/CartTab";
 import "./Header.css";
 
-const Header = () => {
+const Header = (props) => {
+  const { clickCount } = props;
   return (
     <div className="header">
-      <Link to={"home"} className="headerlink-title">
-        Home
-      </Link>
-      <Link to={"shop"} className="headerlink-title">
-        Shop
-      </Link>
-      <CartTab />
+      <div className="link">
+        <Link to={""} className="headerlink-title">
+          Shop
+        </Link>
+      </div>
+      <div className="link">
+        <Link to={"cart"} className="headerlink-title">
+          Cart {clickCount}
+        </Link>
+      </div>
     </div>
   );
 };

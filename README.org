@@ -1,20 +1,19 @@
 * Project: Shopping Cart
 
-* Steps
+* Steps: [4/9]
 
-1. create-react-app -> remove boilerplate
-2. think about the component and the folder structure
-3. create at least two pages -> homepage and shop page + shopping cart
-   - navigation between routes with a navigation bar
-4. to the home page add whatever you like. some images + info will be enough
-   - its main purpose is for practice routing using ~react-router-dom~
-5. on the shopping care route,
-   - the user should see a sticky bar displays the number of items currently in the cart
-   - there should also be a next button for checkout
-6. build individual card items for each of your products build individual card items for each of your products
-   - display an input field on it, which lets a user manually type in how many items that they want to buy.
-   - add an increment and decrement button next to it for fine-tuning
-   - you can also display a title for each product as well as an "Add to Cart" button
-7. the amount on the cart should adjust after add to cart button clicked
-8. make sure to test thoroughly using the react testing library
-9. deploy -> read [[https://create-react-app.dev/docs/deployment/#github-pages][how to deploy react application with client side routing to github pages]] -> read [[https://reactrouter.com/docs/en/v6#router][react router docs for why you should provide a basename to the BrowserRouter]]
+1. [X] create-react-app -> remove boilerplate
+2. [X] think about the component and the folder structure
+3. [X] create at least two pages -> shop page + shopping cart
+   - [X] navigation between routes with a navigation bar
+4. [X] add some purchase items in the shop page
+5. [ ] on the shopping care route,
+   - [ ] the number of items currently in cart should be seen the the stick bar
+   - [ ] there should be a next button for checkout
+6. [ ] build individual card items for each of your products
+   - [ ] display an input field on it, which lets a user manually type in how many items that they want to buy.
+   - [ ] add an increment and decrement button next to it for fine-tuning
+   - [ ] you can also display a title for each product as well as an "Add to Cart" button
+7. [ ] the amount on the cart should adjust after add to cart button clicked
+8. [ ] make sure to test thoroughly using the react testing library
+9. [ ] deploy -> read [[https://create-react-app.dev/docs/deployment/#github-pages][how to deploy react application with client side routing to github pages]] -> read [[https://reactrouter.com/docs/en/v6#router][react router docs for why you should provide a basename to the BrowserRouter]]
