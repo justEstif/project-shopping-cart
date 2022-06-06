@@ -1,0 +1,22 @@
+.item-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30%;
+  padding: 4px;
+
+  border-radius: 5px;
+}
+
+.item-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.item-img {
+  border-radius: 5px 5px 0 0;
+  width: 80%;
+  height: 80%;
+}
+
+.item-text-container {
+  padding: 2px 6px;
+}

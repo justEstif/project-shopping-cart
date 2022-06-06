@@ -1,38 +1,50 @@
-import {
-  coffeeCupsSet12,
-  coffeeCupsSet6,
-  coffeeBeans,
-  incenseBurner,
-} from "../../assets/img/index";
+import { items } from "../../assets/img/index";
+import Item from "../Item/Item";
 
-const items = {
-  coffeCupsSet12: {
-    name: "Coffe Cup Set",
-    count: 12,
-    unit: "pcs",
-    price: 19.5,
-    img: coffeeCupsSet12,
+
+const itemsInformation = {
+  sonyXm5: {
+    name: "Sony WH-1000XM5",
+    price: 400,
+    img: items.sonyXm5
   },
-  coffeeCupsSet6: {
-    name: "Coffee Cup Set",
-    count: 6,
-    unit: "pcs",
-    price: 12.0,
-    img: coffeeCupsSet6,
+  booxAir2Plus: {
+    name: "Boox Note Air2 Plus",
+    price: 500,
+    img: items.booxAir2Plus
   },
-  coffeeBeans: {
-    name: "Roasted Ethiopian Coffee Beans",
-    count: 8,
-    unit: "oz",
-    price: 8,
-    img: coffeeBeans,
+  xpsDesktop: {
+    name: "Dell XPS Desktop",
+    price: 2600,
+    img: items.xpsDesktop
   },
-  incenseBurner: {
-    name: "Incense Burner",
-    cocunt: 1,
-    unit: "pcs",
-    price: 14.5,
-    img: incenseBurner,
+  ps5: {
+    name: "Playstation 5",
+    price: 500,
+    img: items.ps5
   },
+  canonEos: {
+    name: "Canon Eos Rebel T7",
+    price: 500,
+    img: items.canonEos
+  },
+  samsungGalaxy22: {
+    name: "Samsung Galaxy s22 Ultra",
+    price: 1100,
+    img: items.samsungGalaxy22
+  }
 };
+const Items = () => {
+  return (
+    <div className="items-container">
+      <Item item={itemsInformation.sonyXm5} />
+      <Item item={itemsInformation.booxAir2Plus} />
+      <Item item={itemsInformation.xpsDesktop} />
+      <Item item={itemsInformation.ps5} />
+      <Item item={itemsInformation.canonEos} />
+      <Item item={itemsInformation.samsungGalaxy22} />
+    </div>
+  );
+};
+export default Items;
 // function that will loop through the items and create some item component

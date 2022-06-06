@@ -1,18 +1,23 @@
-import coffeeCupsSet12 from "./coffeeCupsSet12.png";
-import coffeeBeans from "./coffeeBeans.png";
-import coffeeCupsSet6 from "./coffeeCupsSet6.jpg";
+import booxAir2Plus from "./booxAir2Plus.png"
+import canonEos from "./canonEos.jpg"
+import ps5 from './ps5.jpeg'
+import samsungGalaxy22 from "./samsungGalaxy22.png"
+import sonyXm5 from "./sonyXm5.png"
+import xpsDesktop from "./xpsDesktop.png"
+
 import cartIcon from "./cartIcon.svg";
-import incenseBurner from "./incenseBurner.png";
 
 const icons = {
   cartIcon,
 };
 
 const items = {
-  coffeeCupsSet12,
-  coffeeCupsSet6,
-  coffeeBeans,
-  incenseBurner,
+  booxAir2Plus,
+  canonEos,
+  ps5,
+  samsungGalaxy22,
+  sonyXm5,
+  xpsDesktop
 };
 
 export { icons, items };

@@ -1,5 +1,4 @@
 * Notes
-
 - [ ] need to write tests for the pages
 - [ ] made the routing work for the home and shop
   - [ ] might have to refactor to make it more clear
@@ -10,7 +9,8 @@
 * What to do
 - I need to import to create some object that keeps track of the items in the shop, with all the proper details
   - I could create an Items component which has the items object and an item component which create the boxes for individual items
-  - i could just make a list of items
+- the Item component needs to show the item and include another component for adjusting the number of items
+  - we can make this something that is controlled in the cart
 
 * Pages
 ** ideas
@@ -20,21 +20,52 @@
 #+begin_src plantuml :file ./other/pagesMindMap.png
 @startmindmap
 + pages
-,**:home page / intro
-Title + Body + Footer;
-,**:cart page
-Title + Body + Footer
-needs some type of Cart component;
 ,**:shop page
 Title + Body + Footer
 Body: needs Item component
 Item component has a name, picture, price and control of number of items
 I need to import the items object here;
+,**:cart page
+Title + Body + Footer
+needs some type of Cart component;
 @endmindmap
 #+end_src
 
 #+RESULTS:
 [[file:./other/pagesMindMap.png]]
+** Cart Page
+*** Components
+-
+** Shop Page
+*** Components
+**** Item
+- [[./other/prototypeItemComponent.png]]
+- Item Information
+  #+begin_src plantuml
+@startuml
+object item
+item : name
+item : price
+item : img
+@enduml
+  #+end_src
+
+  #+RESULTS:
+  [[file:/tmp/babel-6lHFFy/plantuml-hKGWMi.png]]
+- Item Buy Component
+  #+begin_src plantuml
+@startuml
+object PurchaseComponent {
+        quantity
+        price
+}
+@enduml
+  #+end_src
+
+  #+RESULTS:
+  [[file:/tmp/babel-6lHFFy/plantuml-bQNZUB.png]]
+
+
 
 * Components
 ** ideas
