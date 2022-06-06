@@ -7,6 +7,10 @@
   height: 400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  padding: 15px;
+}
+.item-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(245, 0, 0, 0.2);
 }
 .item-img {
   max-width: 100%;
@@ -14,33 +18,36 @@
   display: block;
 }
 .item-img-container {
+  display: flex;
+  justify-content: center;
   width: 350px;
   overflow: hidden;
 }
-
-.item-container:hover {
-  box-shadow: 0 8px 16px 0 rgba(245, 0, 0, 0.2);
-}
-
-.item-title-container {
+.item-price-name-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
   width: 100%;
   height: 20%;
 }
 
-.item-price-button-container {
+.item-control-container {
+  margin: 10px;
   display: flex;
-  justify-content: space-between;
-  border: 2px red solid;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  /* justify-content: space-between; */
   width: 100%;
 }
 
 .item-button {
-  background-color: DodgerBlue; /* Blue background */
-  border: none; /* Remove borders */
-  color: white; /* White text */
-  padding: 12px 16px; /* Some padding */
-  font-size: 16px; /* Set a font size */
-  cursor: pointer; /* Mouse pointer on hover */
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .item-button:hover {

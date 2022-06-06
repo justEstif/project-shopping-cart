@@ -17,3 +17,5 @@
 7. [ ] the amount on the cart should adjust after add to cart button clicked
 8. [ ] make sure to test thoroughly using the react testing library
 9. [ ] deploy -> read [[https://create-react-app.dev/docs/deployment/#github-pages][how to deploy react application with client side routing to github pages]] -> read [[https://reactrouter.com/docs/en/v6#router][react router docs for why you should provide a basename to the BrowserRouter]]
+* Time spent:
+[[https://wakatime.com/badge/user/89e59f6c-302c-4dd1-a1bd-00584bfed206/project/9ff56fad-1347-4702-98b2-27b11668a632.svg][Wakatime]]

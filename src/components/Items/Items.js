@@ -35,14 +35,13 @@ const itemsInShop = [
     img: items.samsungGalaxy22,
   },
 ];
-const Items = (props) => {
-  const { handleClick } = props;
+const Items = ({ handleAddToCart }) => {
   return (
     <div>
       <div className="items-container">
         {itemsInShop.map((item, index) => (
           <React.Fragment key={index}>
-            <Item item={item} handleClick={handleClick} />
+            <Item item={item} handleAddToCart={handleAddToCart} />
           </React.Fragment>
         ))}
       </div>

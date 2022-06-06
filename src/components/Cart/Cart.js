@@ -1,7 +1,8 @@
-const Cart = () => {
+const Cart = ({ items }) => {
   return (
     <div>
       <div>
+        {/* {items} */}
         In cart
         <div>
           <div>item 1</div>

@@ -1,10 +1,9 @@
 import Items from "../../components/Items/Items";
-import "./ShopPage.css"
-const ShopPage = (props) => {
-  const { handleClick } = props
+import "./ShopPage.css";
+const ShopPage = ({ handleAddToCart }) => {
   return (
     <div className="shop-page">
-      <Items handleClick={handleClick} />
+      <Items handleAddToCart={handleAddToCart} />
     </div>
   );
 };
