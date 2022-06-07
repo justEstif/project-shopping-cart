@@ -13,7 +13,7 @@ const MockHeader = () => {
   );
 };
 
-describe("checking if the navbar has the correct links", () => {
+describe("testing the Header component", () => {
   test("checking for 3 router components", () => {
     render(<MockHeader />);
     const linkElements = screen.getAllByRole("link");

@@ -35,15 +35,20 @@ const itemsInShop = [
     img: items.samsungGalaxy22,
   },
 ];
+
 const Items = ({ handleAddToCart }) => {
+  // TODO decouple
+  const returnItems = (items) => {
+    return items.map((item, index) => (
+      <React.Fragment key={index}>
+        <Item item={item} handleAddToCart={handleAddToCart} />
+      </React.Fragment>
+    ));
+  };
   return (
     <div>
       <div className="items-container">
-        {itemsInShop.map((item, index) => (
-          <React.Fragment key={index}>
-            <Item item={item} handleAddToCart={handleAddToCart} />
-          </React.Fragment>
-        ))}
+        {returnItems(itemsInShop)}
       </div>
     </div>
   );

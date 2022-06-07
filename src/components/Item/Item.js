@@ -17,7 +17,7 @@ const Item = (props) => {
     if (!count) return;
     else handleAddToCart({ name, count, price });
   };
-
+  // TODO extract the form to a separate component and share it with the Cart
   return (
     <div className="item-container">
       <div className="item-price-name-container">
@@ -29,38 +29,40 @@ const Item = (props) => {
         <img className="item-img" src={img} alt={name} />
       </div>
 
-      <div>
-        <form onSubmit={handleSubmit} className="item-control-container">
-          <div className="item-quantity-container">
-            <button
-              type="button"
-              onClick={() => {
-                if (count >= 1) setCount((prevCount) => prevCount - 1);
-              }}
-            >
-              -
-            </button>
-            <input
-              type="number"
-              min={0}
-              value={count}
-              onChange={handleChange}
-            ></input>
-            <button
-              type="button"
-              onClick={() => setCount((prevCount) => prevCount + 1)}
-            >
-              +
-            </button>
-          </div>
-          <div className="item-button-container">
-            <button type="submit" className="item-button">
-              <FontAwesomeIcon icon={faShoppingCart} />
-              Add to Cart
-            </button>
-          </div>
-        </form>
-      </div>
+      <form onSubmit={handleSubmit} className="item-control-container">
+
+        <div className="item-quantity-container">
+
+          <button
+            type="button"
+            onClick={() => {
+              if (count >= 1) setCount((prevCount) => prevCount - 1);
+            }}
+          >
+            -
+          </button>
+
+          <input
+            type="number"
+            value={count}
+            onChange={handleChange}
+          ></input>
+
+          <button
+            type="button"
+            onClick={() => setCount((prevCount) => prevCount + 1)}
+          >
+            +
+          </button>
+
+        </div>
+        <div className="item-button-container">
+          <button type="submit" className="item-button">
+            <FontAwesomeIcon icon={faShoppingCart} />
+            Add to Cart
+          </button>
+        </div>
+      </form>
     </div>
   );
 };

@@ -1,4 +1,3 @@
-* TODO
 ** TODO write more tests
 - [ ] I need to figure out how to test react better
 ** TODO appearance
@@ -18,9 +17,11 @@
 ** TODO add a next button in checkout
 - [ ] handle if there is nothing in the cart
 - [ ] create cart after button is clicked
+** TODO create a index.js in every folder for easy import
 
 * What to do
 - Make a way to adjust the number of items to add to the cart
+- disable button when quantity === 0
 - I need to be able to remove items from cart and adjust the quantity
 - I need to import to create some object that keeps track of the items in the shop, with all the proper details
   - I could create an Items component which has the items object and an item component which create the boxes for individual items
@@ -28,44 +29,6 @@
   - we can make this something that is controlled in the cart
 - i need to pass the item with the price and quantity
   - if the item exists in the array, increase the quantity
-
-* Pages
-** Cart Page
-** Shop Page
-
-* Components
-** ideas
-
-* [[https://hackernoon.com/what-should-we-test-reactjs-components-647ded674928][What to Test in React]]
-I was wondering if there could be a small section within the React testing lessons that focused on what to test. Most of the content, as it says in the lesson overview, is in the context of the React testing library rather than on what to test. So a small summary or a small section at the end of React Testing Part 2 that speaks on what to targeting when testing could be helpful. Or maybe including a small article in the assignments or additional resources. I found the following articles to be helpful:
-  - https://mtjody.vercel.app/posts/mui-unit-tests-p1
-  - https://medium.com/finnovate-io/what-to-unit-test-in-a-react-app-16be58d2e941
-  - https://hackernoon.com/what-should-we-test-reactjs-components-647ded674928
-
-
-- identify the features which have most value to the application
-- test user interaction such as click and submit
-- test what the end-user will see and do, not the details
-  - the more your tests resemble the way your software is used, the more confidence they can give you
-
-- While working on the shopping cart project, I noticed that I know very little about what to test in react. After googling, I noticed that there seems to be only a few articles about what to test about in React.
-  - The few resources I found are:
-- default UI steps:
-  1. prepare the environment -> render the component that you are testing
-  2. interact with the component -> type, or click button ...
-  3. assert the change expected -> the value is changed, ....
-
-- make sure it render the expect component
-- make sure the states rendered are what is expected
-- make sure to test component that involved user interactions
-  - test the events and the functions triggered
-- make sure to test the edge cases that could cause errors
-
-- tests only for the render logic and not any internal implementation
-- if functions are nested in react hooks, and you have to test them -> extract them
-- no outsiders in tests
-- try to keep the the component as pure as possible
-
-- ~render~
-- ~screen~
-- ~userevent~
+- why do I need components that just pass the value to the next component?
+  - like shop page simply passing to Items?
+- refactor the entire ~item.js~
