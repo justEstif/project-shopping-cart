@@ -3,6 +3,7 @@ import ShopPage from "./pages/ShopPage/ShopPage";
 import Header from "./components/Header/Header";
 import CartPage from "./pages/CartPage/CartPage";
 import { useState } from "react";
+import "./App.css"
 
 const removeMatchingName = (items, name) =>
   items.filter((item) => item.name !== name);

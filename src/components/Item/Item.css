@@ -1,29 +1,40 @@
-.item-container {
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 400px;
-  height: 400px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 350px;
+  height: 350px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px 0px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px 0px;
   border-radius: 5px;
   padding: 15px;
 }
-.item-container:hover {
-  box-shadow: 0 8px 16px 0 rgba(245, 0, 0, 0.2);
+.container:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px 0px;
 }
-.item-img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-}
-.item-img-container {
+
+.img-container {
   display: flex;
   justify-content: center;
   width: 350px;
   overflow: hidden;
 }
-.item-price-name-container {
+.img {
+  max-width: 70%;
+  max-height: 70%;
+  transition: 0.3s;
+}
+.img:hover {
+  max-width: 90%;
+  max-height: 90%;
+  display: block;
+}
+.price-name-container {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 18px;
   display: flex;
   justify-content: space-around;
   padding: 10px;
@@ -31,25 +42,33 @@
   height: 20%;
 }
 
-.item-control-container {
-  margin: 10px;
+.control-container {
+  /* gccmargin: 10px; */
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-around;
-  /* justify-content: space-between; */
-  width: 100%;
 }
 
-.item-button {
+.button {
   background-color: DodgerBlue;
   border: none;
   color: white;
-  padding: 12px 16px;
-  font-size: 16px;
+  padding: 8px 12px;
+  font-size: 12px;
   cursor: pointer;
 }
 
-.item-button:hover {
+input {
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-family: "Ubuntu Mono", monospace;
+  -moz-appearance: textfield;
+  width: 20px;
+  margin: 10px;
+}
+
+.button:hover {
   background-color: royalblue;
 }
