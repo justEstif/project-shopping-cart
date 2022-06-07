@@ -1,16 +1,11 @@
 import React from "react";
 import CartItem from "../CartItem/CartItem";
-const Cart = ({ items, handleRemoveFromCart }) => {
+const Cart = ({ items, handleRemoveFromCart, handleCheckout }) => {
   const total = items.reduce((acc, item) => acc + (item.count + item.price), 0);
-  const handleClick = () => {
-    console.log("clicked");
-  };
-  const handleChange = () => {
-    console.log("changed");
-  };
-  const handleSubmit = () => {
-    console.log("submit");
-  };
+  const handlePreCheckout = () => {
+    if (items.length <= 0) return
+    else handleCheckout()
+  }
   // Count: {item.count}
   return (
     <div>
@@ -21,6 +16,7 @@ const Cart = ({ items, handleRemoveFromCart }) => {
         </React.Fragment>
       ))}
       <div>Total Price: {total}</div>
+      <button onClick={handlePreCheckout}>Checkout</button>
     </div>
   );
 };

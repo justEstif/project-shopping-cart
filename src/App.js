@@ -27,6 +27,9 @@ const App = () => {
     });
     setItems(tempItems)
   };
+  const handleCheckout = () => {
+    setItems([])
+  }
   return (
     <Router>
       <Header clickCount={clickCount} />
@@ -42,6 +45,7 @@ const App = () => {
           element={
             <CartPage
               items={items}
+              handleCheckout={handleCheckout}
               handleRemoveFromCart={handleRemoveFromCart}
             />
           }
