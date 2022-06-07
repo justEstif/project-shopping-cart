@@ -1,8 +1,8 @@
 import Cart from "../../components/Cart/Cart";
-const CartPage = ({ items }) => {
+const CartPage = ({ items, handleRemoveFromCart }) => {
   return (
     <div>
-      <Cart items={items} />
+      <Cart items={items} handleRemoveFromCart={handleRemoveFromCart} />
     </div>
   );
 };

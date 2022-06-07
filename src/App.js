@@ -11,7 +11,7 @@ const App = () => {
     let tempItems = items;
     let tempIndex;
     for (let i = 0; i < tempItems.length; i++) {
-      if (tempItems[i].name == name) tempIndex = i;
+      if (tempItems[i].name === name) tempIndex = i;
     }
     tempIndex >= 0
       ? (tempItems[tempIndex].count = tempItems[tempIndex].count + count)
@@ -19,6 +19,13 @@ const App = () => {
 
     setItems(tempItems);
     setClickCount(tempItems.length);
+  };
+  const handleRemoveFromCart = (name) => {
+    let tempItems = items;
+    tempItems = tempItems.filter((item) => {
+      return item.name !== name;
+    });
+    setItems(tempItems)
   };
   return (
     <Router>
@@ -29,7 +36,16 @@ const App = () => {
           path="/"
           element={<ShopPage handleAddToCart={handleAddToCart} />}
         />
-        <Route exact path="/cart" element={<CartPage items={items} />} />
+        <Route
+          exact
+          path="/cart"
+          element={
+            <CartPage
+              items={items}
+              handleRemoveFromCart={handleRemoveFromCart}
+            />
+          }
+        />
       </Routes>
     </Router>
   );

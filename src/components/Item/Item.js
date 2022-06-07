@@ -11,17 +11,13 @@ const Item = (props) => {
   const handleChange = (e) => {
     setCount(e.target.value);
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!count) return;
-    const passItem = {
-      name,
-      count,
-      price,
-    };
-    handleAddToCart(passItem);
-    // console.log(passItem);
+    else handleAddToCart({ name, count, price });
   };
+
   return (
     <div className="item-container">
       <div className="item-price-name-container">
