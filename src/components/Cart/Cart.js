@@ -6,7 +6,6 @@ const Cart = ({ items, handleRemoveFromCart, handleCheckout }) => {
     if (items.length <= 0) return
     else handleCheckout()
   }
-  // Count: {item.count}
   return (
     <div>
       <div>In cart</div>

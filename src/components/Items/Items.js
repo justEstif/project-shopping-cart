@@ -49,4 +49,3 @@ const Items = ({ handleAddToCart }) => {
   );
 };
 export default Items;
-// function that will loop through the items and create some item component

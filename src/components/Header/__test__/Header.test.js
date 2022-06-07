@@ -37,3 +37,5 @@ describe("checking if the navbar has the correct links", () => {
   test.todo("logo takes to the homepage");
   test.todo("cart takes to the shoppage");
 });
+
+// test if you can change page by clicking the different headers
