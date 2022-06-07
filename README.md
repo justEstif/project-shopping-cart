@@ -32,4 +32,4 @@
 
 # Time spent:
 
-https://wakatime.com/badge/user/89e59f6c-302c-4dd1-a1bd-00584bfed206/project/9ff56fad-1347-4702-98b2-27b11668a632.svg
+[![wakatime](https://wakatime.com/badge/user/89e59f6c-302c-4dd1-a1bd-00584bfed206/project/9ff56fad-1347-4702-98b2-27b11668a632.svg)](https://wakatime.com/badge/user/89e59f6c-302c-4dd1-a1bd-00584bfed206/project/9ff56fad-1347-4702-98b2-27b11668a632)
