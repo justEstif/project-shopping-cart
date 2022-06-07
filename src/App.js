@@ -11,9 +11,7 @@ const App = () => {
     let tempItems = items;
     let tempIndex;
     for (let i = 0; i < tempItems.length; i++) {
-      if (tempItems[i].name == name) {
-        tempIndex = i;
-      }
+      if (tempItems[i].name == name) tempIndex = i;
     }
     tempIndex >= 0
       ? (tempItems[tempIndex].count = tempItems[tempIndex].count + count)
