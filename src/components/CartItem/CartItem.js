@@ -7,7 +7,7 @@ import "./CartItem.css";
 // TODO think about simply adding the handleRemoveFromCart and handleAddToCart in the CartButton components
 const CartItem = ({ item, handleRemoveFromCart }) => {
   const { name, count, price } = item;
-  const handleClick = () => {};
+  const handleClick = () => { };
   const handleChange = (e) => {
     console.log("change");
   };

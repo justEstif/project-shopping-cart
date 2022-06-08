@@ -25,6 +25,7 @@ const Item = ({ item, handleAddToCart }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (count) handleAddToCart({ name, count, price });
+    setCount(1);
   };
 
   return (

@@ -3,22 +3,22 @@
 - [ ] I need to figure out how to test react better
 ** TODO appearance
 - [-] footer component?
-- [ ] keep track of the current active page ~useParams~
-  - [ ] to update the icons
+- [-] keep track of the current active page ~useParams~
+  - [-] to update the icons
   - [ ] conditional rendering
 ** TODO add a way to adjust the quantity of the item
 - [X] before adding to cart
 - [ ] while in cart
   - [ ] if the users sets it to 0 remove it?
-** TODO report the current items in the cart
+** DONE report the current items in the cart
 - [ ] the items in cart and the number of items in the cart should be in state
   - [ ] count is shared with the navigation bar
   - [ ] items is shared between App and Cart
 - [ ] I need to understand use effect
-** TODO add a next button in checkout
+** DONE add a next button in checkout
 - [ ] handle if there is nothing in the cart
 - [ ] create cart after button is clicked
-** TODO create a index.js in every folder for easy import
+** DONE create a index.js in every folder for easy import
 - [ ] index.js in the components
 
 * What to do
