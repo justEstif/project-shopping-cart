@@ -1,7 +1,25 @@
 .cart-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
+  margin: 10px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px 0px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px 0px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+button {
+  align-self: flex-end;
+  padding: 8px 15px;
+}
+.total {
+  align-self: flex-end;
+  margin: 10px;
 }

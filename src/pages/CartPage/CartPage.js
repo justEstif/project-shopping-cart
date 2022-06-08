@@ -1,5 +1,5 @@
 import { CartItem } from "../../components/Components";
-import "./CartPage.css"
+import "./CartPage.css";
 import React from "react";
 
 const CartPage = ({ items, handleRemoveFromCart, handleCheckout }) => {
@@ -14,9 +14,11 @@ const CartPage = ({ items, handleRemoveFromCart, handleCheckout }) => {
   };
   return (
     <div className="cart-container">
-      <div className="cart">{returnItems(items)}</div>
-      <div>Total Price: {total}</div>
-      <button onClick={handlePreCheckout}>Checkout</button>
+      <div className="cart">
+        <div> {returnItems(items)}</div>
+        <div className="total">Total Price: ${total}</div>
+        <button onClick={handlePreCheckout}>Checkout</button>
+      </div>
     </div>
   );
 };

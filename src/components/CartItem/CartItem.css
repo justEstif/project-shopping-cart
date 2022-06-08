@@ -5,7 +5,11 @@
 }
 
 .control-container {
-  display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.name {
+  display: flex;
+  align-items: center;
 }

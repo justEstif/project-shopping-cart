@@ -57,13 +57,6 @@ const itemsInShop = [
   },
 ];
 
-// const returnItems = (arr, tag, method) => {
-//   return arr.map((el, index) => (
-//     <React.Fragment key={index}>
-//       <Item item={el} handler={method} />
-//     </React.Fragment>
-//   ));
-// };
 const ShopPage = ({ handleAddToCart }) => {
   const returnItems = (items) => {
     return items.map((item, index) => (

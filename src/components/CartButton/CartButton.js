@@ -5,23 +5,18 @@ import "./CartButton.css";
 const CartButton = ({ add }) => {
   const returnRemove = () => {
     return (
-      <div className="button-container">
-        <button type="submit" className="button">
-          <FontAwesomeIcon icon={faTrash} /> Remove from Cart
-        </button>
-      </div>
+      <button type="submit" className="button">
+        <FontAwesomeIcon icon={faTrash} />
+      </button>
     );
   };
   const returnAdd = () => {
     return (
-      <div className="button-container">
-        <button type="submit" className="button">
-          <FontAwesomeIcon icon={faShoppingCart} /> Add to Cart
-        </button>
-      </div>
+      <button type="submit" className="button">
+        <FontAwesomeIcon icon={faShoppingCart} /> Add to Cart
+      </button>
     );
   };
-
   return add ? returnAdd() : returnRemove();
 };
 
