@@ -1,3 +1,4 @@
+* TODO
 ** TODO write more tests
 - [ ] I need to figure out how to test react better
 ** TODO appearance
@@ -18,6 +19,7 @@
 - [ ] handle if there is nothing in the cart
 - [ ] create cart after button is clicked
 ** TODO create a index.js in every folder for easy import
+- [ ] index.js in the components
 
 * What to do
 - Make a way to adjust the number of items to add to the cart
@@ -32,3 +34,40 @@
 - why do I need components that just pass the value to the next component?
   - like shop page simply passing to Items?
 - refactor the entire ~item.js~
+* File Structure
+- src
+  - components
+    - Cart
+      - [ ] move it all to the ShopPage
+      - [ ]
+      - outputs multiple CartItems
+      - final total Prices of Items in cart
+      - there is duplication in the way total is found
+        - should we just add the total of the items?
+    - CartButton
+      - conditional rendering a Remove or Add submit buttons with the right fonts
+      - currenly using a boolean to determine which button to return
+    - CartItem
+      - uses Quantity and CartButton components
+      - needs refactoring
+      - handleClick, handleChange, handleSubmit functions
+    - Header
+      - returns the NavBar (which should be its name)
+      - the only component tested properly
+    - Item
+      - return Item, well designed
+      - needs testing for the different functions
+      - uses Quantity and CartButton like CartItem
+        - needs refactoring to make sure they work as intended
+    - Items
+      - should be moved into the ShopPage
+      - returns multiple Item components
+    - Quantity
+      - returns  + and - and input for the count
+      - figure out better name and handling changes
+  - assets
+  - pages
+    - ShopPage
+      - Only uses Items Component
+    - CartPage
+      - Only uses Cart Component

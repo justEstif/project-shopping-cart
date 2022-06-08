@@ -2,8 +2,11 @@ import "./Cart.css";
 import React from "react";
 import CartItem from "../CartItem/CartItem";
 const Cart = ({ items, handleRemoveFromCart, handleCheckout }) => {
-  // FIXED BUG when the count is equal to 0, the total becomes messed up
+  // find the total of the item
+  // what if we just pass the total of the item and this simply adds them all up?
+  // TODO Item and CartItem should have  Total = price * quantity
   const total = items.reduce((acc, item) => acc + item.count * item.price, 0);
+  // TODO figure out a better name instead of handlePreCheckout
   const handlePreCheckout = () => (items.length > 0 ? handleCheckout() : null);
   const returnItems = (items) => {
     return items.map((item, index) => (

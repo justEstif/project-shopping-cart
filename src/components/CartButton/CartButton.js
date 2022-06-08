@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faShoppingCart } from "@fortawesome/fontawesome-free-solid";
-import "./CartButton.css"
+import "./CartButton.css";
+// TODO find a better, more general name instead CartButton
 const CartButton = ({ add }) => {
   const returnRemove = () => {
     return (

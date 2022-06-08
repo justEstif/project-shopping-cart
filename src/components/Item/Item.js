@@ -1,13 +1,13 @@
 import "./Item.css";
 import React, { useState } from "react";
-import Quantity from "../Quantity/Quantity"
-import CartButton from "../CartButton/CartButton"
+import Quantity from "../Quantity/Quantity";
+import CartButton from "../CartButton/CartButton";
 
-const Item = (props) => {
-  const { name, price, img } = props.item;
-  const { handleAddToCart } = props;
+const Item = ({ item, handleAddToCart }) => {
+  const { name, price, img } = item;
   const [count, setCount] = useState(1);
 
+  // TODO find some non gimiicky way to handleClick for the Item
   const handleClick = (e) => {
     if (e.target.id === "add") {
       setCount((prevCount) => prevCount + 1);
@@ -15,14 +15,17 @@ const Item = (props) => {
       if (count >= 1) setCount((prevCount) => prevCount - 1);
     }
   };
+  // TODO moved the handleChange to the App so that it can be Shared with the CartItem
   const handleChange = (e) => {
     setCount(e.target.value);
   };
 
+  // TODO make handleSubmit in App with both handleRemoveToCart and handleAddToCart
   const handleSubmit = (e) => {
     e.preventDefault();
     if (count) handleAddToCart({ name, count, price });
   };
+
   return (
     <div className="container">
       <div className="price-name-container">
@@ -34,8 +37,13 @@ const Item = (props) => {
         <img className="img" src={img} alt={name} />
       </div>
 
+      {/* TODO instead of have Quantity and CartButton, maybe just a Form component would be better*/}
       <form onSubmit={handleSubmit} className="control-container">
-        <Quantity count={count} handleChange={handleChange} handleClick={handleClick} />
+        <Quantity
+          count={count}
+          handleChange={handleChange}
+          handleClick={handleClick}
+        />
         <CartButton add={true} />
       </form>
     </div>

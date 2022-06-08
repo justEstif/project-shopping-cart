@@ -1,9 +1,12 @@
 import Quantity from "../Quantity/Quantity";
 import CartButton from "../CartButton/CartButton";
-import "./CartItem.css"
+import "./CartItem.css";
+// TODO figure out if the CartItem and Item could be the same thing
+// the only thing they have different is the type of button
+// TODO think about simply adding the handleRemoveFromCart and handleAddToCart in the CartButton components
 const CartItem = ({ item, handleRemoveFromCart }) => {
   const { name, count, price } = item;
-  const handleClick = () => { };
+  const handleClick = () => {};
   const handleChange = (e) => {
     console.log("change");
   };

@@ -36,6 +36,7 @@ const itemsInShop = [
   },
 ];
 
+// TODO move Items into the ShopPage
 const Items = ({ handleAddToCart }) => {
   // TODO decouple
   const returnItems = (items) => {
@@ -47,9 +48,7 @@ const Items = ({ handleAddToCart }) => {
   };
   return (
     <div>
-      <div className="items-container">
-        {returnItems(itemsInShop)}
-      </div>
+      <div className="items-container">{returnItems(itemsInShop)}</div>
     </div>
   );
 };
