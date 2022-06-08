@@ -1,8 +1,9 @@
 import "./Item.css";
 import React, { useState } from "react";
-import Quantity from "../Quantity/Quantity";
-import CartButton from "../CartButton/CartButton";
+// import Quantity from "../Quantity/Quantity";
+// import CartButton from "../CartButton/CartButton";
 
+import { Quantity, CartButton } from "../Components";
 const Item = ({ item, handleAddToCart }) => {
   const { name, price, img } = item;
   const [count, setCount] = useState(1);
