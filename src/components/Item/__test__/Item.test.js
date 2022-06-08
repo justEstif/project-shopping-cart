@@ -5,7 +5,12 @@ import { BrowserRouter } from "react-router-dom";
 // import userEvent from "@testing-library/user-event"
 import Item from "../Item";
 
+
 describe.skip("checking if the Item works as expected", () => {
   test.todo("checking if it renders the passed in value correctly")
   test.todo("checking if it doesn't render if nothing is passed in")
 })
+
+// check handleSubmit and handleChange
+// check if the input works as expected
+// check the buttons and if they make the expected changes

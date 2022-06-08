@@ -3,16 +3,27 @@ import ShopPage from "./pages/ShopPage/ShopPage";
 import Header from "./components/Header/Header";
 import CartPage from "./pages/CartPage/CartPage";
 import { useState } from "react";
+import "./App.css"
+
+const removeMatchingName = (items, name) =>
+  items.filter((item) => item.name !== name);
+
+const findIndexOfItem = (items, name) => {
+  for (let i = 0; i < items.length; i++) {
+    if (items[i].name === name) return i;
+  }
+};
+// TODO create returnNewCart
 
 const App = () => {
   const [clickCount, setClickCount] = useState(0);
   const [items, setItems] = useState([]);
+
   const handleAddToCart = ({ name, count, price }) => {
     let tempItems = items;
-    let tempIndex;
-    for (let i = 0; i < tempItems.length; i++) {
-      if (tempItems[i].name === name) tempIndex = i;
-    }
+    let tempIndex = findIndexOfItem(items, name);
+
+    // TODO figure out how to extract the conditional into a separate function
     tempIndex >= 0
       ? (tempItems[tempIndex].count = tempItems[tempIndex].count + count)
       : tempItems.push({ name, count, price });
@@ -20,16 +31,9 @@ const App = () => {
     setItems(tempItems);
     setClickCount(tempItems.length);
   };
-  const handleRemoveFromCart = (name) => {
-    let tempItems = items;
-    tempItems = tempItems.filter((item) => {
-      return item.name !== name;
-    });
-    setItems(tempItems)
-  };
-  const handleCheckout = () => {
-    setItems([])
-  }
+  const handleRemoveFromCart = (name) =>
+    setItems(removeMatchingName(items, name));
+  const handleCheckout = () => setItems([]);
   return (
     <Router>
       <Header clickCount={clickCount} />
@@ -56,3 +60,4 @@ const App = () => {
 };
 
 export default App;
+export { removeMatchingName, findIndexOfItem };

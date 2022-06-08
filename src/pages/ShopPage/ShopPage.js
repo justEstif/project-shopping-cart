@@ -9,4 +9,3 @@ const ShopPage = ({ handleAddToCart }) => {
 };
 export default ShopPage;
 
-// <Item name="some name" quantity=5 picture={} price = {} />
