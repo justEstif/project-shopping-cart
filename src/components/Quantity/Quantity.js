@@ -1,3 +1,4 @@
+import "./Quantity.css"
 const Quantity = (props) => {
   const { count, handleChange, handleClick } = props;
   return (

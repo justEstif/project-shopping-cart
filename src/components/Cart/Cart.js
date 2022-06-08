@@ -1,3 +1,4 @@
+import "./Cart.css";
 import React from "react";
 import CartItem from "../CartItem/CartItem";
 const Cart = ({ items, handleRemoveFromCart, handleCheckout }) => {
@@ -12,9 +13,8 @@ const Cart = ({ items, handleRemoveFromCart, handleCheckout }) => {
     ));
   };
   return (
-    <div>
-      <div>In cart</div>
-      {returnItems(items)}
+    <div className="cart-container">
+      <div className="cart-items">{returnItems(items)}</div>
       <div>Total Price: {total}</div>
       <button onClick={handlePreCheckout}>Checkout</button>
     </div>

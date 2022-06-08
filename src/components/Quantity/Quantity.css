@@ -1,0 +1,25 @@
+input {
+  border: none;
+  text-align: center;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 16px;
+  -moz-appearance: textfield;
+  width: 20px;
+  /* margin: 10px; */
+}
+
+button {
+  border: none;
+  background-color: white;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+.item-quantity-container {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}

@@ -43,32 +43,7 @@
 }
 
 .control-container {
-  /* gccmargin: 10px; */
   display: flex;
-  width: 100%;
   align-items: center;
-  justify-content: space-around;
-}
-
-.button {
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
-  padding: 8px 12px;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-input {
-  border: none;
-  border-bottom: 1px solid black;
-  text-align: center;
-  font-family: "Ubuntu Mono", monospace;
-  -moz-appearance: textfield;
-  width: 20px;
-  margin: 10px;
-}
-
-.button:hover {
-  background-color: royalblue;
+  justify-content: space-between;
 }
