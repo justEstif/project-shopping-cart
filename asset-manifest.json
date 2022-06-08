@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/project-shopping-cart/static/css/main.20732ebe.css",
+    "main.js": "/project-shopping-cart/static/js/main.efe9816a.js",
+    "static/js/787.b6b92734.chunk.js": "/project-shopping-cart/static/js/787.b6b92734.chunk.js",
+    "static/media/xpsDesktop.png": "/project-shopping-cart/static/media/xpsDesktop.152b636b566ee067a54e.png",
+    "static/media/xbox.png": "/project-shopping-cart/static/media/xbox.40fc39338faedf1c3d66.png",
+    "static/media/sonyXm5.png": "/project-shopping-cart/static/media/sonyXm5.820716b81a50e9fbc8f6.png",
+    "static/media/canonEos.jpg": "/project-shopping-cart/static/media/canonEos.0ec0c03df588e05165d9.jpg",
+    "static/media/booxAir2Plus.png": "/project-shopping-cart/static/media/booxAir2Plus.a7606b217f7359839140.png",
+    "static/media/iphone13Pro.png": "/project-shopping-cart/static/media/iphone13Pro.0a11f3be88b313dfa6e7.png",
+    "static/media/samsungGalaxy22.png": "/project-shopping-cart/static/media/samsungGalaxy22.303548178c433e857f5f.png",
+    "index.html": "/project-shopping-cart/index.html",
+    "main.20732ebe.css.map": "/project-shopping-cart/static/css/main.20732ebe.css.map",
+    "main.efe9816a.js.map": "/project-shopping-cart/static/js/main.efe9816a.js.map",
+    "787.b6b92734.chunk.js.map": "/project-shopping-cart/static/js/787.b6b92734.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20732ebe.css",
+    "static/js/main.efe9816a.js"
+  ]
+}
