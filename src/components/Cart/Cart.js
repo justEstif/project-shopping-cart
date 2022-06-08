@@ -1,6 +1,7 @@
 import "./Cart.css";
 import React from "react";
-import CartItem from "../CartItem/CartItem";
+// import CartItem from "../CartItem/CartItem";
+import { CartItem } from "../Components";
 const Cart = ({ items, handleRemoveFromCart, handleCheckout }) => {
   // find the total of the item
   // what if we just pass the total of the item and this simply adds them all up?

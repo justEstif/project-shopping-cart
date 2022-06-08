@@ -1,5 +1,6 @@
-import Quantity from "../Quantity/Quantity";
-import CartButton from "../CartButton/CartButton";
+// import Quantity from "../Quantity/Quantity";
+// import CartButton from "../CartButton/CartButton";
+import { Quantity, CartButton } from "../Components";
 import "./CartItem.css";
 // TODO figure out if the CartItem and Item could be the same thing
 // the only thing they have different is the type of button

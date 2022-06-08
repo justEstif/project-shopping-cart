@@ -1,38 +1,47 @@
 import React from "react";
-import { items } from "../../assets/img/index";
-import Item from "../Item/Item";
+import {
+  booxAir2Plus,
+  canonEos,
+  ps5,
+  samsungGalaxy22,
+  sonyXm5,
+  xpsDesktop,
+} from "../../assets/img/index";
+
+import { Item } from "../Components";
+// import Item from "../Item/Item";
 import "./Items.css";
 
 const itemsInShop = [
   {
     name: "Sony WH-1000XM5",
     price: 400,
-    img: items.sonyXm5,
+    img: sonyXm5,
   },
   {
     name: "Boox Note Air2 Plus",
     price: 500,
-    img: items.booxAir2Plus,
+    img: booxAir2Plus,
   },
   {
     name: "Dell XPS Desktop",
     price: 2600,
-    img: items.xpsDesktop,
+    img: xpsDesktop,
   },
   {
     name: "Playstation 5",
     price: 500,
-    img: items.ps5,
+    img: ps5,
   },
   {
     name: "Canon Eos Rebel T7",
     price: 500,
-    img: items.canonEos,
+    img: canonEos,
   },
   {
     name: "Samsung Galaxy s22 Ultra",
     price: 1100,
-    img: items.samsungGalaxy22,
+    img: samsungGalaxy22,
   },
 ];
 
