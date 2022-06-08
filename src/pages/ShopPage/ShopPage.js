@@ -2,15 +2,17 @@ import React from "react";
 import {
   booxAir2Plus,
   canonEos,
+  iphone13Pro,
   ps5,
   samsungGalaxy22,
   sonyXm5,
+  xbox,
   xpsDesktop,
 } from "../../assets/img/index";
 
 import { Item } from "../../components/Components";
 
-import "./ShopPage.css"
+import "./ShopPage.css";
 
 const itemsInShop = [
   {
@@ -22,6 +24,11 @@ const itemsInShop = [
     name: "Boox Note Air2 Plus",
     price: 500,
     img: booxAir2Plus,
+  },
+  {
+    name: "Samsung Galaxy S22 Ultra",
+    price: 1100,
+    img: samsungGalaxy22,
   },
   {
     name: "Dell XPS Desktop",
@@ -39,9 +46,14 @@ const itemsInShop = [
     img: canonEos,
   },
   {
-    name: "Samsung Galaxy s22 Ultra",
-    price: 1100,
-    img: samsungGalaxy22,
+    name: "Iphone 13 Pro",
+    price: 1200,
+    img: iphone13Pro,
+  },
+  {
+    name: "xBox Series X",
+    price: 500,
+    img: xbox,
   },
 ];
 
@@ -54,8 +66,8 @@ const ShopPage = ({ handleAddToCart }) => {
     ));
   };
   return (
-    <div className="items-container">
-      <div className="items">{returnItems(itemsInShop)}</div>
+    <div className="shop-container">
+      <div className="shop">{returnItems(itemsInShop)}</div>
     </div>
   );
 };
